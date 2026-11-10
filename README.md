@@ -18,6 +18,7 @@
 
 | 项目 | 简介与亮点 |
 | --- | --- |
+| **[codepilot-agent](https://github.com/TokaiTeio666/codepilot-agent)**<br/><sub>Python · FastAPI · LangGraph · Redis · Docker</sub> | 异步 AI 编程 Agent 平台（Open SWE 二次开发）。GitHub App 三层凭据（JWT → installation token → 按仓库收紧权限），webhook 做 HMAC-SHA256 验签与 delivery 幂等，事件进 Redis Stream 后由双 worker 在 20 并发上限内消费，失败按指数退避重试、超限进死信；Agent 在独立沙箱内改代码、跑测试并回写 draft PR。附完整链路拆解文档。 |
 | **[mylife](https://github.com/TokaiTeio666/mylife)**<br/><sub>FastAPI · Next.js · PostgreSQL · pgvector</sub> | 多用户个人知识库 SaaS（Phase 0–5 全量交付）：Obsidian ZIP / Git 导入、jieba + tsvector + pgvector 三路 RRF 混合检索、带引用流式对话与提示注入防护、日/月/年复盘（LLM 语义抽取 + 确定性 G0–G9 门禁）、Git PR / 对象存储交付；多租户 FORCE RLS，306 个后端测试通过。 |
 | **[llm-serving-lab](https://github.com/TokaiTeio666/llm-serving-lab)**<br/><sub>Python · FastAPI · Docker</sub> | LLM 网关 + 可注入故障的模型服务 + TTFT/TPOT 压测工具。实现按租户限流、准入控制、熔断、重试降级、精确匹配缓存与 SSE 流式错误事件；对接真实 vLLM（Qwen2.5-1.5B 主模型 + 0.5B 降级模型），附 Prometheus 与 13 面板 Grafana。 |
 | **[agent-aware](https://github.com/TokaiTeio666/agent-aware)**<br/><sub>C++ · Vamana · PQ</sub> | 面向 Agent 长期记忆的磁盘向量检索 I/O 优化原型（OS 大赛参赛作品）。100k×128 合成数据集上 Recall@10 **0.877**、平均延迟 **1.14 ms**、单线程 **878 QPS**；含 WAL / SSTable 动态写入路径与可复现实验口径。 |
@@ -32,6 +33,9 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
