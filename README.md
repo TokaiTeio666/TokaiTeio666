@@ -3,7 +3,8 @@
 **Java 后端 · Agent 开发 · 2028 届** · 华南师范大学 (211 / 双一流) · 软件工程
 
 > 后端 + Agent 方向在读本科生，关注高并发系统、缓存一致性与 LLM 应用的服务端工程化。
-> Backend + agent engineer in training, focused on high-concurrency systems, cache consistency and production-grade LLM applications.
+>
+>  Backend + agent engineer in training, focused on high-concurrency systems, cache consistency and production-grade LLM applications.
 >
 > 正在寻找 **Java 后端 / Agent 开发实习（2027 暑期 / 日常）**。
 
